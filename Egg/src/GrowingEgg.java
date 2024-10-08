@@ -29,7 +29,26 @@ public class GrowingEgg extends JPanel {
         g.fillRect(0, 0, NET_SIZE, NET_SIZE);
         g.setColor(Color.YELLOW);
 
-        int ratio = NET_SIZE * 1 / 400;
+//        for (int i = 0; i < 6; i++) {
+//            try {
+//                Thread.sleep(500);  // Pause for half a second between each iteration
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//
+//
+//            int ratio = NET_SIZE * i / 400;
+//
+//            egg_width = ratio * 60;
+//            egg_height = ratio * 40;
+//
+//            x = (NET_SIZE - egg_width) / 2;
+//            y = (NET_SIZE - egg_height) / 2;
+//
+//            g.fillOval(x, y, egg_width, egg_height);
+//        }
+
+        int ratio = NET_SIZE / 400;
 
         egg_width = ratio * 60;
         egg_height = ratio * 40;
@@ -42,6 +61,7 @@ public class GrowingEgg extends JPanel {
     }
 
     public static void main (String[]args){
+        
         new GrowingEgg(1000);
     }
 }
