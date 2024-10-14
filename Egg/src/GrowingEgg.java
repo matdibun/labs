@@ -50,8 +50,8 @@ public class GrowingEgg extends JPanel {
 
         int ratio = NET_SIZE / 400;
 
-        egg_width = ratio * 60;
-        egg_height = ratio * 40;
+        egg_width += 60;
+        egg_height += 40;
 
         x = (NET_SIZE - egg_width) / 2;
         y = (NET_SIZE - egg_height) / 2;
